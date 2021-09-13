@@ -41,3 +41,10 @@ ng generate store
 ```
 ng generate store AppState --root --module app.module.ts --state-path store --state-interface AppState
 ```
+## step 3
+add ngrx 
+*use git bash 
+## command 
+```
+npm install @ngrx/{store,effects,entity,store-devtools} --save
+```
