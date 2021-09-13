@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store'
-import { loadUsers } from './store/actions/user/user.actions'
+import { favoriteNumber, loadUsers, loadUsersSuccess, selectUser } from './store/actions/user/user.actions'
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,8 @@ export class AppComponent {
   constructor(
     private store: Store
   ){
-    this.store.dispatch(loadUsers())
+    this.store.dispatch(loadUsersSuccess({data: [{id: 9, name: 'joe'}]}));
+    this.store.dispatch(selectUser({data: {id: 9, name: 'mark'}}));
+    this.store.dispatch(favoriteNumber({data: 1}))
   }
 }
