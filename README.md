@@ -54,3 +54,10 @@ ng add action
 ```
 ng g action store/user --group --api --flat false --skip-tests --prefix load --creators true
 ```
+## step 5
+ng add reducer
+* correct file path (/store/reducers/post)
+## commmand
+```
+ng g r store/user --creators true --flat false --group --module app.module.ts --skip-tests --api --reducers index.ts
+```
