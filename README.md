@@ -30,7 +30,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## step 1
 add schematics 
-##Command
+## Command
 ```
 ng add @ngrx/schematics@latest --defaultCollection true
+```
+
+## step 2
+ng generate store
+## Command
+```
+ng generate store AppState --root --module app.module.ts --state-path store --state-interface AppState
 ```
